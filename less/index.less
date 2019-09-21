@@ -1,0 +1,145 @@
+@import "variables";
+ html {
+    height: 100%;
+    overflow: hidden;
+ } 
+ 
+ body {
+     margin: 0;
+     padding: 0;
+     perspective: 1px;
+     transform-style: preserve-3d;
+     height: 100%;
+     overflow-y: scroll;
+     overflow-x: hidden;
+ }
+ 
+ul {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    
+    li {
+        list-style-type: none;
+       
+
+        a {
+            text-decoration: none;
+            color: @nav-color;
+            font-size: 120%;
+        }
+    }
+}
+
+header {
+    box-sizing: border-box;
+    padding: 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../img/tip-jar.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+   
+
+    h1 {
+        color: @h1-color;
+        font-family: @h1-font;
+        font-size: 650%;
+        text-shadow: 1px 1px white;
+    }
+
+    p {
+        color: white;
+        text-shadow: 2px 2px black;
+        font-family: @reg-font;
+        font-size: 150%;
+        
+    }
+
+    button {
+        width: 20%;
+        height: 50px;
+        border-radius: 5px;
+        background-color: @h1-color;
+        justify-content: center;
+        margin-left: 40%;
+        font-size: 150%;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+        color: @nav-color;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: @p-size;
+        font-family: @reg-font;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    text-align: center;
+
+    h3 {
+        color: @nav-color;
+        text-align: center;
+    }
+
+    .mission {
+        width: 40%;
+
+        p {
+            font-size: 1rem;
+            font-family: @reg-font;
+        }
+    }
+
+    .vision {
+        width: 40%;
+        padding-left: 10%;
+        font-size: 1rem;
+        font-family: @reg-font;
+    }
+}
+
+footer {
+    
+    background-image: linear-gradient(@nav-color, @h1-color);
+    height: 10%;
+
+  
+
+      ul{
+      align-items: center;
+      text-decoration: white;
+      
+        li a {
+         color: white;
+         margin-top: 10%;
+   }
+}
+
+  small {
+     color: white;
+     margin-left: 40%;
+}
+}

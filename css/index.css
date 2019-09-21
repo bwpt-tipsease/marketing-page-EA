@@ -1,0 +1,115 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  color: #8a9a5b;
+  font-size: 120%;
+}
+header {
+  box-sizing: border-box;
+  padding: 10%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(../img/tip-jar.jpg);
+  background-size: cover;
+  background-position: center;
+}
+header h1 {
+  color: #228c22;
+  font-family: 'Lobster', cursive;
+  font-size: 650%;
+  text-shadow: 1px 1px white;
+}
+header p {
+  color: white;
+  text-shadow: 2px 2px black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 150%;
+}
+header button {
+  width: 20%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #228c22;
+  justify-content: center;
+  margin-left: 40%;
+  font-size: 150%;
+}
+header button a {
+  color: white;
+  text-decoration: none;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.intro h2 {
+  color: #8a9a5b;
+  font-size: 2rem;
+}
+.intro p {
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  text-align: center;
+}
+.container h3 {
+  color: #8a9a5b;
+  text-align: center;
+}
+.container .mission {
+  width: 40%;
+}
+.container .mission p {
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+}
+.container .vision {
+  width: 40%;
+  padding-left: 10%;
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+}
+footer {
+  background-image: linear-gradient(#8a9a5b, #228c22);
+  height: 10%;
+}
+footer ul {
+  align-items: center;
+  text-decoration: white;
+}
+footer ul li a {
+  color: white;
+  margin-top: 10%;
+}
+footer small {
+  color: white;
+  margin-left: 40%;
+}
