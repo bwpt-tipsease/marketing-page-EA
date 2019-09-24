@@ -1,0 +1,308 @@
+@import "variables";
+@import "escaping";
+
+
+ html {
+    height: 100%;
+    overflow: hidden;
+ } 
+ 
+ body {
+     margin: 0;
+     padding: 0;
+     perspective: 1px;
+     transform-style: preserve-3d;
+     height: 100%;
+     overflow-y: scroll;
+     overflow-x: hidden;
+ }
+ 
+ul {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    
+    @media @tablet {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 140%;
+        line-height: 1.5;
+    }
+    li {
+        list-style-type: none;
+       
+
+        a {
+            text-decoration: none;
+            color: @nav-color;
+            font-size: 120%;
+
+            @media @tablet {
+                border-bottom: 1px solid @nav-color;
+            }
+        }
+    }
+}
+
+header {
+    box-sizing: border-box;
+    padding: 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../img/tip-jar.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+   
+
+    h1 {
+        color: @h1-color;
+        font-family: @h1-font;
+        font-size: 650%;
+        text-shadow: 1px 1px white;
+    }
+
+    p {
+        color: white;
+        text-shadow: 2px 2px black;
+        font-family: @reg-font;
+        font-size: 150%;
+        
+    }
+
+    button {
+        width: 20%;
+        height: 50px;
+        border-radius: 5px;
+        background-color: @h1-color;
+        justify-content: center;
+        margin-left: 40%;
+        font-size: 150%;
+
+        @media @tablet {
+            width: 40%;
+            margin-left: 30%;
+        }
+
+     
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+   @media @tablet {
+       padding: 1%;
+   }
+
+    h2 {
+        color: @nav-color;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: @p-size;
+        font-family: @reg-font;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    text-align: center;
+
+    @media @tablet {
+        flex-direction: column;
+    }
+
+    P{
+            font-size: 1rem;
+            font-family: @reg-font;
+
+            @media @tablet {
+                font-size: 120%;
+            }
+            }
+
+
+    h3 {
+        color: @nav-color;
+        text-align: center;
+          
+        @media @tablet {
+          font-size: 150%
+        }
+    }
+
+    .mission {
+        width: 40%;
+
+        @media @tablet {
+            width: 100%;
+            
+        }
+
+    }
+
+    .vision {
+        width: 40%;
+        padding-left: 10%;
+
+        @media @tablet {
+            width: 100%;
+            padding-left: 0;
+            
+        }
+
+
+
+    }
+}
+
+.testimonials {
+    padding-bottom: 5%;
+   border-top: 1px solid @nav-color;
+
+    h3 {
+            font-size: @p-size;
+            color: @nav-color;
+            text-align: center;
+            padding: 5%;
+    }
+
+    p{
+        width: 80%;
+        text-align: center;
+        padding-left: 10%;
+       
+    }
+    
+.container-two {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    
+    
+    @media @tablet {
+        flex-direction: column;
+    }
+
+    .cinthia {
+       
+        width: 40%;
+        font-family: @reg-font;
+        text-align: center;
+        color: black;
+        
+
+        @media @tablet {
+            width: 100%;
+        }
+    }
+
+    .first-pic {
+        width: 50%;
+        border-radius: 50%;
+
+        @media @tablet {
+            width: 40%;
+        }
+       
+    }
+
+    .andrew {
+        width: 40%;
+        font-family: @reg-font;
+        text-align: center;
+        color: black;
+
+
+
+        @media @tablet {
+            width: 100%;
+            padding-top: 5%;
+            border-top: 1px solid @nav-color;
+        }
+       
+    }
+
+    .second-pic {
+        width: 50%;
+        border-radius: 50%;
+
+        @media @tablet {
+            width: 40%;
+        }
+    }
+}
+
+} 
+
+footer {
+    
+    background-image: linear-gradient(@nav-color, @h1-color);
+    height: 15%;
+
+  
+
+      ul{
+      align-items: center;
+      text-decoration: white;
+      padding-top: 1%;
+     
+     
+      @media @tablet {
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 1rem;
+        padding-top: 2%;
+    }
+      
+        li a {
+         color: white;
+         margin-top: 10%; 
+   }
+}
+
+  small {
+     color: white;
+     margin-left: 45%;
+
+     @media @tablet {
+        margin-left: 40%;
+    }
+
+    @media @phone {
+        margin-left: 30%;
+    }
+}
+}
+
+li a:hover {
+    color: @h1-color;
+}
+
+button:hover {
+    background-color: @nav-color;
+}
+
+footer a:hover {
+    color: white;
+   
+}
+
